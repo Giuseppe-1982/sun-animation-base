@@ -15,7 +15,7 @@ Built with **HTML**, **SCSS**, **JavaScript**, and powered by **Vite.js**.
 ## Project Structure
 
 ```
-gmuccillo-projects/
+sun-animation-base/
 ├── public/
 │   └── assets/               
 │       ├── audio/            # Background music files
@@ -39,11 +39,11 @@ gmuccillo-projects/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Giuseppe-1982/gmuccillo-projects.git
+   git clone https://github.com/Giuseppe-1982/sun-animation-base
    ```
 2. **Navigate to the project folder**:
    ```bash
-   cd gmuccillo-projects
+   cd sun-animation-base
    ```
 3. **Install dependencies**:
    ```bash
