@@ -9,7 +9,7 @@ Built with **HTML**, **SCSS**, **JavaScript**, and powered by **Vite.js**.
 - **Dynamic Clouds**: Clouds drift naturally across the sky with subtle animations.
 - **Shooting Stars**: Animated shooting stars appear randomly for a lively night sky.
 - **Particle Effects**: Starry night effect implemented using [particles.js](https://github.com/VincentGarreau/particles.js).
-- **Background Music**: Relaxing music plays automatically; click anywhere to pause/resume both animations and audio.
+- **Background Music**: Relaxing music is preloaded; click anywhere to start, pause, or resume both animations and audio.
 - **Interactive Pause**: Single click pauses all animations and background music; click again to resume.
 
 ## Project Structure
@@ -18,21 +18,21 @@ Built with **HTML**, **SCSS**, **JavaScript**, and powered by **Vite.js**.
 sun-animation-base/
 ├── public/
 │   └── assets/               
-│       ├── audio/            # Background music files
-│       └── images/           # Images used in the animation
+│       ├── audio/              # Background music files
+│       └── images/             # Images used in the animation
 ├── src/
 │   ├── scripts/
-│   │   ├── main.js           # Controls animations and background music
-│   │   └── particle.js       # Configures and manages particle effects
+│   │   ├── main.js             # Controls animations and background music
+│   │   └── particles-setup.js  # Configures and manages particle effects
 │   └── styles/
 │       └── scss/
-│           ├── abstracts/    # Variables, mixins, and functions
-│           ├── base/         # Base styles and resets
-│           └── main.scss     # Main entry SCSS file
-├── .gitignore                
-├── index.html                # Main HTML file
-├── package-lock.json         # Lockfile for npm dependencies
-└── package.json              # Project metadata and dependencies
+│           ├── abstracts/      # Variables, mixins, and functions
+│           ├── base/           # Base styles and resets
+│           └── main.scss       # Main entry SCSS file
+├── .gitignore                  
+├── index.html                  # Main HTML file
+├── package-lock.json           # Lockfile for npm dependencies
+└── package.json                # Project metadata and dependencies
 ```
 
 ## Installation
