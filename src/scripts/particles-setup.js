@@ -1,4 +1,10 @@
-// particle.js
+/* 
+---------------------------------------------------------------------------------------
+ particles-setup.js - particle configuration and control for static and animated states
+---------------------------------------------------------------------------------------
+*/
+
+// Base particle configuration (appearance and behavior)
 const particlesConfig = {
   particles: {
     number: { value: 1355, density: { enable: true, value_area: 800 } },
@@ -35,9 +41,10 @@ const particlesConfig = {
   retina_detect: true
 };
 
+// Tracks whether particles have been initialized
 let particlesInitialized = false;
 
-// Inizializza le particelle statiche all’inizio
+// Initialize static particles at page load
 export function initParticles() {
   if (!particlesInitialized && typeof particlesJS !== 'undefined') {
     particlesJS('particles-js', particlesConfig);
@@ -45,29 +52,28 @@ export function initParticles() {
 
     const pjs = window.pJSDom[0].pJS;
     if (pjs) {
-      // Parti statiche: disattiva animazioni
+      // Disable animations for static display
       pjs.particles.move.enable = false;
       pjs.particles.opacity.anim.enable = false;
       pjs.particles.size.anim.enable = false;
-      pjs.fn.particlesDraw(); // disegna subito le particelle statiche
+      pjs.fn.particlesDraw(); // Render static particles immediately
     }
   }
 }
 
-// Avvia le particelle con animazioni
+// Start particle animations
 export function startParticles() {
   const pjs = window.pJSDom?.[0]?.pJS;
   if (pjs) {
     pjs.particles.move.enable = true;
     pjs.particles.opacity.anim.enable = true;
     pjs.particles.size.anim.enable = true;
-    // Imposta la velocità reale
-    pjs.particles.move.speed = 1.5; 
-    pjs.fn.particlesRefresh(); // riapplica le animazioni
+    pjs.particles.move.speed = 1.5; // Set actual animation speed
+    pjs.fn.particlesRefresh(); // Apply animations
   }
 }
 
-// Ferma le particelle (visibili ma statiche)
+// Pause particles: particles remain visible but static
 export function pauseParticles() {
   const pjs = window.pJSDom?.[0]?.pJS;
   if (pjs) {

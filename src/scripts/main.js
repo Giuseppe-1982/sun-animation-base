@@ -8,7 +8,7 @@
 document.documentElement.style.display = '';
 
 import '../styles/scss/main.scss';
-import { initParticles, startParticles, pauseParticles } from './particle.js';
+import { initParticles, startParticles, pauseParticles } from './particles-setup.js';
 
 /* 
 -----------------------------------------------------------------------------
