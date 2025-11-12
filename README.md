@@ -32,7 +32,8 @@ sun-animation-base/
 ├── .gitignore                  
 ├── index.html                  # Main HTML file
 ├── package-lock.json           # Lockfile for npm dependencies
-└── package.json                # Project metadata and dependencies
+├── package.json                # Project metadata and dependencies
+└── README.md                   # Project documentation
 ```
 
 ## Installation
