@@ -40,7 +40,7 @@ sun-animation-base/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Giuseppe-1982/sun-animation-base
+   git clone https://github.com/gmuc-dev/sun-animation-base
    ```
 2. **Navigate to the project folder**:
    ```bash
